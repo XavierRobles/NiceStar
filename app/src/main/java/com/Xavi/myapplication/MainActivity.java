@@ -3,6 +3,7 @@ package com.Xavi.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -35,14 +36,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        fotoGlide2 =(ImageView) findViewById(R.id.imgview_alien);
+        fotoGlide2 = findViewById(R.id.imgview_alien);
 
         Glide.with(this)
                 .load(R.drawable.alien)
                 .centerCrop()
                 .transition(DrawableTransitionOptions.withCrossFade(500))
                 //.placeholder(new ColorDrawable(this.getResources()
-                // .getColor(R.color.design_default_color_background)))
+               // .getColor(R.color.design_default_color_background)))
                 .circleCrop()
                 //.getDiskCacheStrategy(DiskCacheStrategy.NONE)
                 .into(fotoGlide2);
