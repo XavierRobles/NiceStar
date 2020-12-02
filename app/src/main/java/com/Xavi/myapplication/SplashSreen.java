@@ -55,7 +55,7 @@ public class SplashSreen extends AppCompatActivity {
                 .transition(DrawableTransitionOptions.withCrossFade(500))
                 //.placeholder(new ColorDrawable(this.getResources()
                 // .getColor(R.color.design_default_color_background)))
-                .circleCrop()
+                //.circleCrop()
                 //.getDiskCacheStrategy(DiskCacheStrategy.NONE)
                 .into(fotolucha);
 

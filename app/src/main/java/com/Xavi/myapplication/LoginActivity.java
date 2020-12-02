@@ -3,7 +3,6 @@ package com.Xavi.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
@@ -12,8 +11,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 /**
  * Carga la pantalla inicial de la aplicacion donde da las opciones de iniciar la aplicacio o registrarse
  * @author Xavier Robles
@@ -29,7 +26,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        fotoEstrellas =findViewById(R.id.img_estrellas);
+        fotoEstrellas =findViewById(R.id.img_fotorecortada);
 
         Animation myanim9 = AnimationUtils.loadAnimation(this, R.anim.rotacion);
         fotoEstrellas.startAnimation(myanim9);
