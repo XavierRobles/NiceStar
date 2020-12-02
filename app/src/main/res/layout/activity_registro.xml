@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroActivity">
+
+    <ImageView
+        android:id="@+id/img_fondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:scaleType="center"
+        android:src="@drawable/textura"
+
+       />
+
+    <ImageView
+        android:id="@+id/img_casa"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="60dp"
+        android:background="@mipmap/ic_launcher_casa_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usernameTIL"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:alpha="0.6"
+        android:background="@android:color/white"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintEnd_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/img_casa"
+
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+
+
+            android:background="@android:color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTIL"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:alpha="0.8"
+        android:background="@android:color/white"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintEnd_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/usernameTIL"
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:alpha="0.6"
+
+            android:background="@android:color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailTIL"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+
+        android:alpha="0.8"
+        android:background="@android:color/white"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintEnd_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/passwordTIL"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:alpha="0.6"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_singup"
+        android:layout_width="145dp"
+        android:layout_height="60dp"
+        android:alpha="0.8"
+        android:text="SingUp"
+
+
+
+        app:layout_constraintTop_toBottomOf="@+id/emailTIL"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintStart_toEndOf="@+id/btn_cancel"
+
+
+
+
+         />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_cancel"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:alpha="0.8"
+        android:text="Cancel"
+
+        app:layout_constraintTop_toBottomOf="@+id/emailTIL"
+        app:layout_constraintEnd_toEndOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/btn_singup"
+         />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
