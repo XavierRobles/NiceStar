@@ -7,15 +7,18 @@
     tools:context=".RegistroActivity">
 
     <ImageView
-        android:id="@+id/img_fondo"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:scaleType="center"
-        android:src="@drawable/textura"
+        android:id="@+id/img_fotorecortada"
+        android:layout_width="2200dp"
+        android:layout_height="2200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/estrellas"
+        app:layout_constraintBottom_toBottomOf="@+id/guideline6"
+        app:layout_constraintEnd_toEndOf="@+id/guideline4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
 
-       />
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/img_casa"
@@ -34,7 +37,7 @@
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:layout_marginTop="16dp"
-        android:alpha="0.6"
+        android:alpha="0.8"
         android:background="@android:color/white"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintEnd_toEndOf="@+id/guideline2"
@@ -46,10 +49,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Username"
-
-
             android:background="@android:color/white" />
-
+        <!-- android:background="@drawable/buttoncorners"-->
     </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -95,7 +96,7 @@
             android:background="@android:color/white"
             android:inputType="textEmailAddress"
             android:hint="Email"
-            android:alpha="0.6"/>
+            android:alpha="0.8"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -122,16 +123,14 @@
         android:layout_width="145dp"
         android:layout_height="60dp"
         android:alpha="0.8"
-        android:text="SingUp"
+        android:text="SignUp"
+        style="@style/ButtonOutlined"
 
 
 
         app:layout_constraintTop_toBottomOf="@+id/emailTIL"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintStart_toEndOf="@+id/btn_cancel"
-
-
-
 
          />
 
@@ -142,12 +141,42 @@
         android:layout_height="60dp"
         android:alpha="0.8"
         android:text="Cancel"
+        style="@style/ButtonOutlined"
 
         app:layout_constraintTop_toBottomOf="@+id/emailTIL"
         app:layout_constraintEnd_toEndOf="@+id/guideline2"
         app:layout_constraintStart_toEndOf="@+id/btn_singup"
          />
 
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="-1.00" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="2.00" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="-5.00" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="3"/>
 
 
 

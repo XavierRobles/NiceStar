@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 
@@ -19,8 +21,9 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
  * @see MainActivity2
  */
 public class MainActivity extends AppCompatActivity {
-    Button botonMain2;
-    ImageView fotoGlide2;
+    private Button botonMain2;
+    private ImageView fotoGlide2;
+    private ImageView fotoEstrellas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +38,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        fotoEstrellas =findViewById(R.id.img_fotorecortada);
+        Animation myanim1 = AnimationUtils.loadAnimation(this, R.anim.rotacion);
+        fotoEstrellas.startAnimation(myanim1);
 
         fotoGlide2 = findViewById(R.id.imgview_alien);
 
