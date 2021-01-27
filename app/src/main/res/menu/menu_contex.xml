@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context="com.Xavi.myapplication.MainActivity">
+
+    <item
+
+        android:id="@+id/Edit"
+        android:title="Edit"
+        app:showAsAction="withText" />
+
+
+    <item
+
+        android:id="@+id/Setting"
+        android:title="Setting"
+        app:showAsAction="withText" />
+
+    <item
+        android:id="@+id/Corazon"
+        android:icon="@drawable/corazon"
+        app:showAsAction="always|withText"
+
+        android:title="Toca para apagar el telefono" />
+    <item
+        android:id="@+id/lupa"
+        android:icon="@drawable/lupa_foreground"
+        app:showAsAction="always|withText"
+        android:title="No tocar" />
+
+
+</menu>           
