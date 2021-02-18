@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, MainActivity2.class);
                 startActivity(intent);
 
+
             }
         });
 
@@ -84,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
         // *** EXPANDABLE CARD ***
 
         ExpandableCardView card = findViewById(R.id.profile);
@@ -91,6 +93,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onExpandChanged(View v, boolean isExpanded) {
                 Toast.makeText(MainActivity.this, isExpanded ? "Expanded!" : "Collapsed!", Toast.LENGTH_SHORT).show();
+
             }
         });
     }
@@ -104,6 +107,8 @@ public class MainActivity extends AppCompatActivity {
             case R.id.Edit:
                 Toast toast = Toast.makeText(this, "going CONTEXT Edit", Toast.LENGTH_LONG);
                 toast.show();
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                startActivity(intent);
                 break;
             case R.id.Setting:
                 Toast toast2 = Toast.makeText(this, "going CONTEXT SETTINGS", Toast.LENGTH_LONG);
@@ -130,6 +135,8 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.Corazon) {
             Toast toast = Toast.makeText(this, "going APPBAR LIKE", Toast.LENGTH_LONG);
             toast.show();
+            showAlertDialogButtonClicked(MainActivity.this);
+
             return true;
         }
         if (id == R.id.lupa) {

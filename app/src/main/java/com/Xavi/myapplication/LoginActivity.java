@@ -10,6 +10,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * Carga la pantalla inicial de la aplicacion donde da las opciones de iniciar la aplicacio o registrarse
@@ -27,6 +28,8 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         fotoEstrellas =findViewById(R.id.img_fotorecortada);
+
+
 
         Animation myanim9 = AnimationUtils.loadAnimation(this, R.anim.rotacion);
         fotoEstrellas.startAnimation(myanim9);

@@ -43,7 +43,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="120dp"
-                    android:text="PRUEBA"
+                    android:text="LIKE"
                     android:textColor="@android:color/white"
                     android:textSize="30sp" />
 

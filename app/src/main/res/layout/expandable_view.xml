@@ -44,9 +44,9 @@
 
         <TextView
             android:id="@+id/name"
-            android:layout_width="383dp"
-            android:layout_height="116dp"
-            android:layout_marginTop="75dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="75dp"
             android:text="Xavier Robles"
             android:textColor="@color/white"
             android:textSize="30sp" />
