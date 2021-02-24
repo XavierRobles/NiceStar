@@ -5,7 +5,7 @@
 
 -------|-------|-------|
 <img src="/app/doc/img/Registro.png" width="300px"> | <img src="/app/doc/img/RegistroEdit.png" width="300px"> | <img src="/app/doc/img/MenuAlien.png" width="300px">
-</span>
+
 <b style="color:white">Appbar menu</b> | <b style="color:white">Perfil</b> | <b style="color:white">Deplegable</b>
 -------|-------|-------|
 <img src="/app/doc/img/Appbar.png" width="300px"> | <img src="/app/doc/img/AppbarAlert.png" width="300px"> | <img src="/app/doc/img/Card.png" width="300px">
