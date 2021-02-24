@@ -1,7 +1,11 @@
 <resources>
-    <string name="app_name">NiceStar</string>
+    <string name="app_name">NiceStar by Xavier</string>
     <string name="top_app_bar_label_title">Top app bar</string>
     <string name="app_bar_menu_share">Share</string>
     <string name="app_bar_menu_search">Search</string>
     <string name="app_bar_menu_bookmark">Bookmark</string>
+    <string name="ghub"><u>XavierRobles</u></string>
+    <string name="registro">¿No tienes una cuenta? <u><b>Registrate aqui</b></u></string>
+
+
 </resources>

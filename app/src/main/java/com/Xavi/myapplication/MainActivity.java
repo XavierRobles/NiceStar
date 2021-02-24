@@ -17,6 +17,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -39,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
     private Button botonMain2;
     private ImageView fotoGlide2;
     private ImageView fotoEstrellas;
+    private WebView web;
+    MainActivity m = this;
 
     //Ventanita
     private SwipeRefreshLayout swipeLayout;
@@ -65,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
 
         fotoEstrellas = findViewById(R.id.img_fotorecortada);
         Animation myanim1 = AnimationUtils.loadAnimation(this, R.anim.rotacion);
@@ -100,24 +105,50 @@ public class MainActivity extends AppCompatActivity {
 
 
     //    creamos una lista de eventos para los items del menus contextual
+
+    /**
+     *
+     * @param item botones al pulsar el alien y su funciones
+     * @return
+     */
     @Override
     public boolean onContextItemSelected(MenuItem item) {
         AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
         switch (item.getItemId()) {
-            case R.id.Edit:
-                Toast toast = Toast.makeText(this, "going CONTEXT Edit", Toast.LENGTH_LONG);
-                toast.show();
+            case R.id.main:
                 Intent intent = new Intent(MainActivity.this, MainActivity2.class);
                 startActivity(intent);
+                Toast toast = Toast.makeText(this, "Activity Main", Toast.LENGTH_LONG);
+                toast.show();
                 break;
             case R.id.Setting:
-                Toast toast2 = Toast.makeText(this, "going CONTEXT SETTINGS", Toast.LENGTH_LONG);
+                Toast toast2 = Toast.makeText(this, "Activity de opciones en construcción", Toast.LENGTH_LONG);
                 toast2.show();
+                break;
+            case R.id.close:
+                Intent intent1 = new Intent(MainActivity.this, ConstraintSet.Motion.class);
+                startActivity(intent1);
+                Toast toast3 = Toast.makeText(this, "Cerrando app", Toast.LENGTH_LONG);
+                toast3.show();
+                break;
+            case R.id.perfil:
+                Toast toast4 = Toast.makeText(this, "Abriendo perfil", Toast.LENGTH_LONG);
+                toast4.show();
+                showAlertDialogButtonClicked(MainActivity.this);
+                break;
+            case R.id.buscar:
+                Toast toast5 = Toast.makeText(this, "Accediendo a la LUPA", Toast.LENGTH_LONG);
+                toast5.show();
                 break;
         }
         return super.onContextItemSelected(item);
     }
 
+    /**
+     *
+     * @param menu creacion del app bar manu, con el archivo menu_contex.xml
+     * @return
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -125,6 +156,11 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+    /**
+     *
+     * @param item potones del Appbar menu y sus funciones
+     * @return
+     */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -132,17 +168,38 @@ public class MainActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
         //noinspection SimplifiableIfStatement
-        if (id == R.id.Corazon) {
-            Toast toast = Toast.makeText(this, "going APPBAR LIKE", Toast.LENGTH_LONG);
-            toast.show();
-            showAlertDialogButtonClicked(MainActivity.this);
+        switch (item.getItemId()) {
+            case R.id.main:
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                startActivity(intent);
+                Toast toast = Toast.makeText(this, "Activity Main", Toast.LENGTH_LONG);
+                toast.show();
 
-            return true;
+
+                break;
+            case R.id.Setting:
+                Toast toast2 = Toast.makeText(this, "Activity de opciones en construcción", Toast.LENGTH_LONG);
+                toast2.show();
+                break;
+            case R.id.close:
+                Intent intent1 = new Intent(MainActivity.this, ConstraintSet.Motion.class);
+                startActivity(intent1);
+                Toast toast3 = Toast.makeText(this, "Cerrando app", Toast.LENGTH_LONG);
+                toast3.show();
+
+                break;
+            case R.id.perfil:
+                Toast toast4 = Toast.makeText(this, "Abriendo perfil", Toast.LENGTH_LONG);
+                toast4.show();
+                showAlertDialogButtonClicked(MainActivity.this);
+                break;
+            case R.id.buscar:
+                Toast toast5 = Toast.makeText(this, "Accediendo a la LUPA", Toast.LENGTH_LONG);
+                toast5.show();
+
+                break;
         }
-        if (id == R.id.lupa) {
-            Toast toast = Toast.makeText(this, "going APPBAR LUPA", Toast.LENGTH_LONG);
-            toast.show();
-        }
+
         return super.onOptionsItemSelected(item);
     }
     // *** SWIPEREFRESH con SNACKBAR ***
@@ -152,13 +209,10 @@ public class MainActivity extends AppCompatActivity {
     protected SwipeRefreshLayout.OnRefreshListener mOnRefreshListener = new SwipeRefreshLayout.OnRefreshListener() {
         @Override
         public void onRefresh() {
-
             //    opción TOAST
             //
             //          Toast toast0 = Toast.makeText(MainContextActivity.this, "going swipeREFRESH", Toast.LENGTH_LONG);
             //          toast0.show();
-
-
             //   opción SNACKBAR
 
 //           SUSTITUIR POR CONSTRAINT EN SU CASO
@@ -166,11 +220,11 @@ public class MainActivity extends AppCompatActivity {
             //           final RelativeLayout mLayout = (RelativeLayout) findViewById(R.id.activity_main_context);
 
             Snackbar snackbar = Snackbar
-                    .make(mLayout, "fancy a Snack while you refresh?", Snackbar.LENGTH_LONG)
-                    .setAction("UNDO", new View.OnClickListener() {
+                    .make(mLayout, "Refrescando el activity", Snackbar.LENGTH_LONG)
+                    .setAction("Hecho", new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            Snackbar snackbar1 = Snackbar.make(mLayout, "Action is restored!", Snackbar.LENGTH_SHORT);
+                            Snackbar snackbar1 = Snackbar.make(mLayout, "Activity listo", Snackbar.LENGTH_SHORT);
                             snackbar1.show();
                         }
                     });
@@ -184,6 +238,10 @@ public class MainActivity extends AppCompatActivity {
 
     // *** DIALOGO MODAL ***
 
+    /**
+     *
+     * @param view Showaler muestra la tarjeta con la informacion del perfil
+     */
     public void showAlertDialogButtonClicked(MainActivity view) {
 
         // setup the alert builder
@@ -191,45 +249,62 @@ public class MainActivity extends AppCompatActivity {
 
 
         //el dialogo estandar tiene título/icono pero podemos sustituirlo por un XML a medida
-//        builder.setTitle("Achtung!");
-//        builder.setMessage("Where do you go?");
-//        builder.setIcon(R.drawable.ic_action_name_dark);
-
+        builder.setTitle("Perfil");
+        builder.setMessage("Links de contacto");
+        builder.setIcon(R.drawable.yo);
 
         // un XML a medida para el diálogo
         builder.setView(getLayoutInflater().inflate(R.layout.alertdialog_view, null));
-
+        web = findViewById(R.id.wv_web);
         // add the buttons
-        builder.setPositiveButton("Glide", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton("Github", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 // do something like...
-                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
-                startActivity(intent);
+
+
+                Toast toast = Toast.makeText(m, "https://github.com/XavierRobles", Toast.LENGTH_LONG);
+                toast.show();
+                web.setVisibility(View.VISIBLE);
+                web = findViewById(R.id.wv_web);
+                web.setWebViewClient(new WebViewClient());
+                String url ="https://github.com/XavierRobles";
+                web.loadUrl(url);
+
                 dialog.dismiss();
 
             }
         });
 
-        builder.setNegativeButton("ChatBot", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton("FaceBook", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-
+                web.setVisibility(View.VISIBLE);
+                web = findViewById(R.id.wv_web);
+                web.setWebViewClient(new WebViewClient());
+                String url ="https://www.facebook.com/Xavi.Robles.Robles";
+                web.loadUrl(url);
                 // do something like...
-                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
-                startActivity(intent);
+                Toast toast = Toast.makeText(m, "https://www.facebook.com/Xavi.Robles.Robles", Toast.LENGTH_LONG);
+                toast.show();
 
                 dialog.dismiss();
             }
         });
 
-        builder.setNeutralButton("MotionLayout", new DialogInterface.OnClickListener() {
+        builder.setNeutralButton("LinkedIn", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
 
+                web.setVisibility(View.VISIBLE);
+                web = findViewById(R.id.wv_web);
+                web.setWebViewClient(new WebViewClient());
+                String url ="https://www.linkedin.com/";
+                web.loadUrl(url);
+                Toast toast = Toast.makeText(m, "https://www.linkedin.com/in/xavier-robles-614987186", Toast.LENGTH_LONG);
+                toast.show();
                 // do something like...
-                Intent intent = new Intent(MainActivity.this, ConstraintSet.Motion.class);
-                startActivity(intent);
+
 
                 dialog.dismiss();
             }
@@ -239,7 +314,6 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog dialog = builder.create();
         dialog.show();
     }
-
 
         @Override
         public void onCreateContextMenu (ContextMenu menu, View v,

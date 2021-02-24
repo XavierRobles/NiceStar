@@ -65,8 +65,6 @@ public class SplashSreen extends AppCompatActivity {
     }
 
 
-
-
     private void openApp(boolean locationPermission) {
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
