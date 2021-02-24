@@ -5,11 +5,11 @@
 <span style="color:white"><b>Splash</b> y el <b>Login</b> son la <b style="color:Black">principales pantallas</b> de nuestra aplicacion carga una pequeña animacion</span>
 <b style="color:white">Registro</b> | <b style="color:white">Main principal</b> | <b style="color:white">Menu al mantener pulsado</b>
 -------|-------|-------|
-![](/app/doc/img/Registro.png) | ![](/app/doc/img/RegistroEdit.png) | <img src="/app/doc/img/MenuAlien.png" width="350">
+<img src="/app/doc/img/Registro.png" width="250px"> | <img src="/app/doc/img/RegistroEdit.png" width="250px"> | <img src="/app/doc/img/MenuAlien.png" width="250px">
 <span style="color:white"><b>Registro</b> para nuevos usuarios, <b>Menu principal</b> son la <b style="color:Black">donde ya se puede ver gran variedad de la funcionabilidad</b></span>
 <b style="color:white">Appbar menu</b> | <b style="color:white">Perfil</b> | <b style="color:white">Deplegable</b>
 -------|-------|-------|
-![](/app/doc/img/Appbar.png) | ![](/app/doc/img/AppbarAlert.png) | <img src="/app/doc/img/Card.png" width="350">
+![](/app/doc/img/Appbar.png) | ![](/app/doc/img/AppbarAlert.png) | <img src="/app/doc/img/Card.png" width="250px">
 <span style="color:white"><b>Appbar es donde podemos elegir la opciones del menu el perfil o deplegar la tarjeta de usuario</b>, <b>Perfil es donde salen todos los link del usuario y los carga en pantalla</b> <b style="color:Black">Carga una tarjeta con el nombre del usuario</b></span>
 <b style="color:white">menu 2</b> | <b style="color:white">Barra de navegacion</b> | <b style="color:white">Demo</b>
 -------|-------|-------|
