@@ -13,3 +13,4 @@
 <b style="color:white">menu 2</b> | <b style="color:white">Barra de navegacion</b> | <b style="color:white">Demo</b>
 -------|-------|-------|
 <img src="/app/doc/img/Main2.png" width="300px"> | <img src="/app/doc/img/Navegacionbar.png" width="300px"> | <img src="/app/doc/img/Perfilload.png" width="300px">
+-------|-------|-------|
