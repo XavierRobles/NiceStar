@@ -15,7 +15,7 @@
 <img src="/app/doc/img/Registro.png" width="300px"> | <img src="/app/doc/img/RegistroEdit.png" width="300px"> | <img src="/app/doc/img/MenuAlien.png" width="300px">
 
 <hr>
-<b style="color:white">Registro</b> y el <b style="color:white">registro en accion para nuevos usuarios.</b> <b style="color:white">En la pantalla principal del despues de loguearse puedes pulsar en la imagen y depliega un menu interactivo</b>
+<b style="color:white">Registro</b> y el <b style="color:white">registro en accion para nuevos usuarios.</b> <b style="color:white">En la pantalla principal, despues de loguearse, puedes pulsar en la imagen y depliega un menu interactivo</b>
 <hr>
 
 
@@ -25,7 +25,7 @@
 
 
 <hr>
-<span style="color:white"><b>Appbar es donde podemos elegir la opciones del menu, el perfil o deplegar la tarjeta de usuario.</b>, <b> Perfil es el cicono del corazon y es donde salen todos los link del usuario y al pulsarlos los carga en pantalla. </b> <b style="color:Black">El deplegable carga una tarjeta con el nombre del usuario</b></span>
+<span style="color:white"><b>Appbar es donde podemos elegir la opciones del menu, el perfil o deplegar la tarjeta de usuario.</b>, <b> Perfil es el icono del corazon y es donde salen todos los link del usuario y al pulsarlos los carga en pantalla. </b> <b style="color:Black">El deplegable carga una tarjeta con el nombre del usuario</b></span>
 <hr>
 
 
