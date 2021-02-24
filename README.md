@@ -9,7 +9,7 @@
 <span style="color:white"><b>Registro</b> para nuevos usuarios, <b>Menu principal</b> son la <b style="color:Black">donde ya se puede ver gran variedad de la funcionabilidad</b></span>
 <b style="color:white">Appbar menu</b> | <b style="color:white">Perfil</b> | <b style="color:white">Deplegable</b>
 -------|-------|-------|
-<img src="/app/doc/img/Appbar.png" width="300px"> | <img src="(/app/doc/img/AppbarAlert.png" width="300px"> | <img src="/app/doc/img/Card.png" width="300px">
+<img src="/app/doc/img/Appbar.png" width="300px"> | <img src="/app/doc/img/AppbarAlert.png" width="300px"> | <img src="/app/doc/img/Card.png" width="300px">
 <span style="color:white"><b>Appbar es donde podemos elegir la opciones del menu el perfil o deplegar la tarjeta de usuario</b>, <b>Perfil es donde salen todos los link del usuario y los carga en pantalla</b> <b style="color:Black">Carga una tarjeta con el nombre del usuario</b></span>
 <b style="color:white">menu 2</b> | <b style="color:white">Barra de navegacion</b> | <b style="color:white">Demo</b>
 -------|-------|-------|
