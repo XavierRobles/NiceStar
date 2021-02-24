@@ -14,9 +14,9 @@
 -------|-------|-------|
 <img src="/app/doc/img/Registro.png" width="300px"> | <img src="/app/doc/img/RegistroEdit.png" width="300px"> | <img src="/app/doc/img/MenuAlien.png" width="300px">
 
-<br>
-<b style="color:white">Registro</b> y el <b style="color:white">registro en accion para nuevos usuarios</b> <b style="color:white">Al pulsar a la imagen depliega un menu</b>
-<br>
+<hr>
+<b style="color:white">Registro</b> y el <b style="color:white">registro en accion para nuevos usuarios.</b> <b style="color:white">En la pantalla principal del despues de loguearse puedes pulsar en la imagen y depliega un menu interactivo</b>
+<hr>
 
 
 <b style="color:white">Appbar menu</b> | <b style="color:white">Alert perfil</b> | <b style="color:white">Card</b>
@@ -24,9 +24,9 @@
 <img src="/app/doc/img/Appbar.png" width="300px"> | <img src="/app/doc/img/AppbarAlert.png" width="300px"> | <img src="/app/doc/img/Card.png" width="300px">
 
 
-<br>
-<span style="color:white"><b>Appbar es donde podemos elegir la opciones del menu el perfil o deplegar la tarjeta de usuario</b>, <b>Perfil es donde salen todos los link del usuario y los carga en pantalla</b> <b style="color:Black">Carga una tarjeta con el nombre del usuario</b></span>
-<br>
+<hr>
+<span style="color:white"><b>Appbar es donde podemos elegir la opciones del menu, el perfil o deplegar la tarjeta de usuario.</b>, <b> Perfil es el cicono del corazon y es donde salen todos los link del usuario y al pulsarlos los carga en pantalla. </b> <b style="color:Black">El deplegable carga una tarjeta con el nombre del usuario</b></span>
+<hr>
 
 
 <b style="color:white">Menu Navegacion</b> | <b style="color:white">Barra de Navegacion funcionabilidad</b> | <b style="color:white">Demo</b>
