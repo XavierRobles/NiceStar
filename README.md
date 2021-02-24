@@ -4,10 +4,9 @@
 <img src="/app/doc/img/Splash.png" width="300px"> | <img src="/app/doc/img/Login.png" width="300px"> | <img src="/app/doc/img/Main.png" width="300px">
 
 
-
-<br>
+<hr>
 <span style="color:white"><b>Splash</b> y el <b>Login</b> son la <b style="color:Black">principales pantallas</b> de nuestra aplicacion carga una pequeña animacion</span>
-<br>
+<hr>
 
 
 
@@ -15,22 +14,28 @@
 -------|-------|-------|
 <img src="/app/doc/img/Registro.png" width="300px"> | <img src="/app/doc/img/RegistroEdit.png" width="300px"> | <img src="/app/doc/img/MenuAlien.png" width="300px">
 
-
-
 <br>
-<span style="color:white"><b>Splash</b> y el <b>Login</b> son la <b style="color:Black">principales pantallas</b> de nuestra aplicacion carga una pequeña animacion</span>
+<b style="color:white">Registro</b> y el <b style="color:white">registro en accion para nuevos usuarios</b> <b style="color:white">Al pulsar a la imagen depliega un menu</b>
 <br>
-
 
 
 <b style="color:white">Appbar menu</b> | <b style="color:white">Alert perfil</b> | <b style="color:white">Card</b>
 -------|-------|-------|
 <img src="/app/doc/img/Appbar.png" width="300px"> | <img src="/app/doc/img/AppbarAlert.png" width="300px"> | <img src="/app/doc/img/Card.png" width="300px">
 
-<b style="color:white">Menu Navegacion</b> | <b style="color:white">Barra de Navegacion funcionabilidad</b> | <b style="color:white">Demo</b>
--------|-------|-------|
 
-<img src="/app/doc/img/Main2.png" width="300px"> | <img src="/app/doc/img/Navegacionbar.png" width="300px"> | <img src="/app/doc/img/Perfilload.png" width="300px">
 <br>
 <span style="color:white"><b>Appbar es donde podemos elegir la opciones del menu el perfil o deplegar la tarjeta de usuario</b>, <b>Perfil es donde salen todos los link del usuario y los carga en pantalla</b> <b style="color:Black">Carga una tarjeta con el nombre del usuario</b></span>
 <br>
+
+
+<b style="color:white">Menu Navegacion</b> | <b style="color:white">Barra de Navegacion funcionabilidad</b> | <b style="color:white">Demo</b>
+-------|-------|-------|
+<img src="/app/doc/img/Main2.png" width="300px"> | <img src="/app/doc/img/Navegacionbar.png" width="300px"> | <img src="/app/doc/img/Perfilload.png" width="300px">
+
+<hr>
+<b style="color:Black">Aqui podemos ver la barra de navegacion con su funcionalidad</b></span>
+<hr>
+
+
+
