@@ -29,7 +29,7 @@
 <hr>
 
 
-<b style="color:white">Update activity</b> | <b style="color:white">Update activity</b> | <b style="color:white">Update activity</b>
+<b style="color:white">Update activity</b> | <b style="color:white">Update activity pulsado</b> | <b style="color:white">Update activity completo</b>
 -------|-------|-------|
 <img src="/app/doc/img/Actualizar.png" width="300px"> | <img src="/app/doc/img/Actualizar2.png" width="300px"> | <img src="/app/doc/img/Actualizar3.png" width="300px">
 
@@ -44,6 +44,6 @@
 <img src="/app/doc/img/Main2.png" width="300px"> | <img src="/app/doc/img/Navegacionbar.png" width="300px"> | <img src="/app/doc/img/Perfilload.png" width="300px">
 
 <hr>
-<b style="color:Black">Aquí podemos ver la función de actualizar arrastrando la pantalla hacia abajo y soltando</b></span>
+<b style="color:Black">Aquí podemos ver la Barra de navegacion y su funcionabilidad</b></span>
 <hr>
 
