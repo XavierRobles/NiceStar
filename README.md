@@ -39,7 +39,7 @@
 
 
 
-<b style="color:white">Update activity</b> | <b style="color:white">Update activity</b> | <b style="color:white">Update activity</b>
+<b style="color:white">Barra de navegacion</b> | <b style="color:white">Barra de navegacio pulsando</b> | <b style="color:white">Demo</b>
 -------|-------|-------|
 <img src="/app/doc/img/Main2.png" width="300px"> | <img src="/app/doc/img/Navegacionbar.png" width="300px"> | <img src="/app/doc/img/Perfilload.png" width="300px">
 
