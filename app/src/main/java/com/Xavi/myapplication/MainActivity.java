@@ -22,6 +22,7 @@ import android.webkit.WebViewClient;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -42,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageView fotoGlide2;
     private ImageView fotoEstrellas;
     private WebView web;
+    ProgressBar progressBar;
     MainActivity m = this;
 
     //Ventanita
@@ -57,7 +59,6 @@ public class MainActivity extends AppCompatActivity {
         //ventanita
         swipeLayout = (SwipeRefreshLayout) findViewById(R.id.myswipe);
         swipeLayout.setOnRefreshListener(mOnRefreshListener);
-
 
         botonMain2 = findViewById(R.id.bnt_Main2);
         botonMain2.setOnClickListener(new View.OnClickListener() {
@@ -211,8 +212,8 @@ public class MainActivity extends AppCompatActivity {
         public void onRefresh() {
             //    opción TOAST
             //
-            //          Toast toast0 = Toast.makeText(MainContextActivity.this, "going swipeREFRESH", Toast.LENGTH_LONG);
-            //          toast0.show();
+//                      Toast toast0 = Toast.makeText(MainActivity.this, "going swipeREFRESH", Toast.LENGTH_LONG);
+//                      toast0.show();
             //   opción SNACKBAR
 
 //           SUSTITUIR POR CONSTRAINT EN SU CASO
@@ -226,11 +227,14 @@ public class MainActivity extends AppCompatActivity {
                         public void onClick(View view) {
                             Snackbar snackbar1 = Snackbar.make(mLayout, "Activity listo", Snackbar.LENGTH_SHORT);
                             snackbar1.show();
+
+
                         }
                     });
 
             snackbar.show();
-            swipeLayout.setRefreshing(false);
+
+            swipeLayout.setRefreshing(true);
 
         }
     };
