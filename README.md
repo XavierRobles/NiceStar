@@ -39,3 +39,11 @@
 
 
 
+<b style="color:white">Update activity</b> | <b style="color:white">Update activity</b> | <b style="color:white">Update activity</b>
+-------|-------|-------|
+<img src="/app/doc/img/Mai2.png" width="300px"> | <img src="/app/doc/img/Navegacionbar.png" width="300px"> | <img src="/app/doc/img/Main.png" width="300px">
+
+<hr>
+<b style="color:Black">Aquí podemos ver la función de actualizar arrastrando la pantalla hacia abajo y soltando</b></span>
+<hr>
+
